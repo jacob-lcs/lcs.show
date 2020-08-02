@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob 的博客</title>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar-container">
+      <img src="http://image.lcs.show/%E5%A4%B4%E5%83%8F.jpg" alt="头像" class="avatar">
+      <div class="circle"></div>
+    </div>
+    <p class="name">刘成帅（Jacob）</p>
+    <p class="description head">你好，我是 Jacob，一名前端工程师。和屏幕前的你一样，渴望探求新技术，提高自己的能力。</p>
+    <p class="description">我一般在博客园写博客，本来是想在自己的服务器弄一个静态博客，但是受限于服务器带宽限制，访问速度不佳，所以仍然在博客园进行写作，欢迎大家来到<a href="https://www.cnblogs.com/Jacob98/" target="blank">我的主页</a>。</p>
+    <p class="description">另外我也在 <a href="https://github.com/jacob-lcs" target="blank">GitHub</a> 上开源一些自己做过的项目，如果你觉得这些项目对你有用，请点个 star。</p>
+    <p>❤️</p>
+  </div>
+  <style>
+    body {
+      background-color: rgb(52,73,94);
+    }
+    a{
+      color: white;
+    }
+    .container{
+      width: 100%;
+      text-align: center;
+    }
+    .name { 
+      font-size: 30px;
+      color: white;
+    }
+    .avatar-container{
+      position: relative;
+      height: 300px;
+    }
+    .avatar{
+      width: 130px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .circle{
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      position: absolute;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: white;
+      z-index: -1;
+    }
+    .description.head {
+      margin-top: 50px;
+    }
+    .description{
+      color: rgb(165,177,184);
+    }
+  </style>
+</body>
+</html>
