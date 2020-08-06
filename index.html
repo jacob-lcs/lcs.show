@@ -1,10 +1,19 @@
+<!--
+ * @Description: 
+ * @Autor: liuchengshuai001
+ * @Date: 2020-03-28 13:30:13
+ * @LastEditors: liuchengshuai001
+ * @LastEditTime: 2020-08-06 20:18:03
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob 的博客</title>
 </head>
+
 <body>
   <div class="container">
     <div class="avatar-container">
@@ -13,30 +22,43 @@
     </div>
     <p class="name">刘成帅（Jacob）</p>
     <p class="description head">你好，我是 Jacob，一名前端工程师。和屏幕前的你一样，渴望探求新技术，提高自己的能力。</p>
-    <p class="description">我一般在博客园写博客，本来是想在自己的服务器弄一个静态博客，但是受限于服务器带宽限制，访问速度不佳，所以仍然在博客园进行写作，欢迎大家来到<a href="https://www.cnblogs.com/Jacob98/" target="blank">我的主页</a>。</p>
-    <p class="description">另外我也在 <a href="https://github.com/jacob-lcs" target="blank">GitHub</a> 上开源一些自己做过的项目，如果你觉得这些项目对你有用，请点个 star。</p>
+    <p class="description">我一般在博客园写博客，本来是想在自己的服务器弄一个静态博客，但是受限于服务器带宽限制，访问速度不佳，所以仍然在博客园进行写作，欢迎大家来到<a
+        href="https://www.cnblogs.com/Jacob98/" target="blank">我的主页</a>。</p>
+    <p class="description">另外我也在 <a href="https://github.com/jacob-lcs" target="blank">GitHub</a>
+      上开源一些自己做过的项目，如果你觉得这些项目对你有用，请点个 star。</p>
+    <div class="my-project">
+      <div class="project-item"><a href="http://schdule.lcs.show" target="blank">课程系统</a></div>
+      <div class="project-item"><a href="https://www.yuque.com/jacob.lcs/" target="blank">语雀</a></div>
+      <div class="project-item"><a href="https://www.cnblogs.com/Jacob98/" target="blank">博客园</a></div>
+      <div class="project-item"><a href="https://github.com/jacob-lcs" target="blank">GitHub</a></div>
+    </div>
     <p>❤️</p>
   </div>
   <style>
     body {
-      background-color: rgb(52,73,94);
+      background-color: rgb(52, 73, 94);
     }
-    a{
+
+    a {
       color: white;
     }
-    .container{
+
+    .container {
       width: 100%;
       text-align: center;
     }
-    .name { 
+
+    .name {
       font-size: 30px;
       color: white;
     }
-    .avatar-container{
+
+    .avatar-container {
       position: relative;
       height: 300px;
     }
-    .avatar{
+
+    .avatar {
       width: 130px;
       border-radius: 50%;
       position: absolute;
@@ -44,7 +66,8 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    .circle{
+
+    .circle {
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
@@ -55,12 +78,25 @@
       background-color: white;
       z-index: -1;
     }
+
     .description.head {
       margin-top: 50px;
     }
-    .description{
-      color: rgb(165,177,184);
+
+    .description {
+      color: rgb(165, 177, 184);
+    }
+    .project-item{
+      display: inline-block;
+      padding: 5px;
+      border: 1px white solid;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    .project-item>a{
+      text-decoration: none !important;
     }
   </style>
 </body>
+
 </html>
