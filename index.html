@@ -3,7 +3,7 @@
  * @Autor: liuchengshuai001
  * @Date: 2020-03-28 13:30:13
  * @LastEditors: liuchengshuai001
- * @LastEditTime: 2020-08-06 20:42:50
+ * @LastEditTime: 2020-08-14 17:41:43
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob 的博客</title>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +31,18 @@
     <p class="description">另外我也在 <a href="https://github.com/jacob-lcs" target="blank">GitHub</a>
       上开源一些自己做过的项目，如果你觉得这些项目对你有用，请点个 star。</p>
     <div class="my-project">
-      <div class="project-item"><a href="http://schedule.lcs.show" target="blank">课程系统</a></div>
+      <div class="project-item">
+        <div class="dropdown">
+          <span class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            开源项目
+            <span class="caret"></span>
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="http://schedule.lcs.show">课程系统</a></li>
+            <li><a href="http://xxle.lcs.show">开心消消乐</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="project-item"><a href="https://www.yuque.com/jacob.lcs/" target="blank">语雀</a></div>
       <div class="project-item"><a href="https://www.cnblogs.com/Jacob98/" target="blank">博客园</a></div>
       <div class="project-item"><a href="https://github.com/jacob-lcs" target="blank">GitHub</a></div>
@@ -95,6 +110,15 @@
     }
     .project-item>a{
       text-decoration: none !important;
+    }
+
+    .btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active{
+      border-color: transparent !important;
+      background-color: transparent !important;
+      color: white !important;
+    }
+    .btn{
+      padding: 0;
     }
   </style>
 </body>
