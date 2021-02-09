@@ -16,7 +16,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/serviceworker.js?enable_sw=false').catch(err => {
+        navigator.serviceWorker.register('/serviceworker.js').catch(err => {
           console.error(err.message);
         });
       });

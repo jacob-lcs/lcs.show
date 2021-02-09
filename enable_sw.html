@@ -7,10 +7,8 @@
   <title>禁用 service worker</title>
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/serviceworker.js').catch(err => {
-          console.error(err.message);
-        });
+      navigator.serviceWorker.register('/serviceworker.js').catch(err => {
+        console.error(err.message);
       });
     }
   </script>
