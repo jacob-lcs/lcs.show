@@ -1,7 +1,7 @@
 "use strict";
 self.addEventListener('fetch', function (event) {
-  console.log(event.request.url)
-  if (/(\.jpe?g|\.png)$/.test(event.request.url)) {
+  console.log(location)
+  if (/(\.jpe?g|\.png)$/.test(event.request.url) && !/[?&]enable_sw=false/.test(location.search)) {
     var supportsWebp = false;
     if (event.request.headers.has('accept')) {
       supportsWebp = event.request.headers.get('accept').includes('webp');

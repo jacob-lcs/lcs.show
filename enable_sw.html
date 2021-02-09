@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>禁用 service worker</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/serviceworker.js').catch(err => {
+          console.error(err.message);
+        });
+      });
+    }
+  </script>
+</head>
+<body>
+  <img src="https://file.lcs.show/1.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/2.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/3.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/4.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/5.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/6.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/7.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/8.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/9.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/10.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/11.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/12.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/13.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/14.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/15.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/16.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/17.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/18.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/19.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/20.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/21.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/22.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/23.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/24.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/25.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/26.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/27.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/28.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/29.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/30.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/31.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/32.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/33.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/34.jpg" style="width: 100px;">
+  <img src="https://file.lcs.show/35.jpg" style="width: 100px;">
+</body>
+</html>
